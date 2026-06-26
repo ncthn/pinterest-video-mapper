@@ -17,9 +17,9 @@ import {
 
 const execFileAsync = promisify(execFile);
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const firestoreProject = "gen-lang-client-0878196270";
-const firestoreDb = "(default)";
-const storeId = "bynyla";
+const firestoreProject = process.env.FIRESTORE_PROJECT || "gen-lang-client-0878196270";
+const firestoreDb = process.env.FIRESTORE_DB || "(default)";
+const storeId = argValue("store", process.env.PINTEREST_STORE_ID || "bynyla");
 const pinterestApi = "https://api.pinterest.com/v5";
 
 function argValue(name, fallback = "") {
@@ -133,11 +133,19 @@ async function shopifyGraphql(shopifyUrl, shopifyToken, query, variables = {}) {
 
 async function downloadVideo(job, cacheDir) {
   await fs.mkdir(cacheDir, { recursive: true });
+  const localCandidate = job.localVideo ? rootPath(job.localVideo) : "";
+  if (localCandidate) {
+    try {
+      const stat = await fs.stat(localCandidate);
+      if (stat.size > 0) return localCandidate;
+    } catch {}
+  }
   const videoPath = path.join(cacheDir, `${job.pinId}.mp4`);
   try {
     const stat = await fs.stat(videoPath);
     if (stat.size > 0) return videoPath;
   } catch {}
+  if (!job.videoUrl) throw new Error(`No local video or videoUrl for ${job.id}`);
   const res = await fetch(job.videoUrl, { headers: { "User-Agent": "Mozilla/5.0" } });
   if (!res.ok) throw new Error(`Video download failed: ${res.status}`);
   await finished(Readable.fromWeb(res.body).pipe(createWriteStream(videoPath)));
