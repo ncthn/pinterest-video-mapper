@@ -46,6 +46,14 @@ function productMatches(product, query) {
   return haystack.includes(query);
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
 function guessProducts(pin) {
   const text = normalize(`${pin.title} ${pin.description}`);
   return state.products.filter((product) => {
@@ -78,17 +86,29 @@ function toggleProduct(pinId, product, statusEl) {
   const exists = current.some((item) => item.handle === product.handle);
   const products = exists
     ? current.filter((item) => item.handle !== product.handle)
-    : [...current, { title: product.title, handle: product.handle, url: product.onlineStoreUrl || "" }];
+    : [{
+      title: product.title,
+      handle: product.handle,
+      url: product.onlineStoreUrl || product.url || "",
+      image: product.image || "",
+      price: product.price || "",
+    }];
   return saveAnnotation(pinId, { products }, statusEl);
 }
 
-function renderProductChips(container, pin, products, statusEl, variant = "") {
+function renderProductCards(container, pin, products, statusEl, variant = "") {
   container.innerHTML = "";
   products.forEach((product) => {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `chip ${isSelected(pin.id, product) ? "selected" : ""} ${variant}`;
-    button.textContent = product.title;
+    button.className = `product-card ${isSelected(pin.id, product) ? "selected" : ""} ${variant}`;
+    button.innerHTML = `
+      <img src="${escapeHtml(product.image || "")}" alt="" loading="lazy">
+      <span>
+        <strong>${escapeHtml(product.title)}</strong>
+        <small>${escapeHtml(product.price ? `$${product.price}` : product.productType || "")}</small>
+      </span>
+    `;
     button.addEventListener("click", async () => {
       await toggleProduct(pin.id, product, statusEl);
       renderRows();
@@ -178,15 +198,34 @@ function renderRow(pin) {
     const guessed = guessProducts(pin).filter((product) => !selected.some((item) => item.handle === product.handle));
     const results = state.products
       .filter((product) => productMatches(product, query))
-      .filter((product) => !popularProducts.some((popular) => popular.handle === product.handle))
-      .slice(0, query ? 18 : 10);
+      .filter((product) => query || !popularProducts.some((popular) => popular.handle === product.handle))
+      .slice(0, query ? 12 : 0);
+    const quickPicks = (guessed.length ? guessed : popularProducts)
+      .filter((product) => !selected.some((item) => item.handle === product.handle))
+      .slice(0, 4);
 
-    renderProductChips(selectedEl, pin, selected, statusEl);
-    renderProductChips(popularEl, pin, popularProducts, statusEl);
-    renderProductChips(resultsEl, pin, [...guessed, ...results], statusEl, guessed.length ? "guess" : "");
+    renderProductCards(selectedEl, pin, selected, statusEl);
+    selectedEl.classList.toggle("empty", selected.length === 0);
+    if (!selected.length) selectedEl.innerHTML = "<p>No Bynyla bag selected yet.</p>";
+    renderProductCards(popularEl, pin, quickPicks, statusEl, guessed.length ? "guess" : "");
+    renderProductCards(resultsEl, pin, results, statusEl);
+    resultsEl.classList.toggle("open", Boolean(query));
   };
 
   productSearch.addEventListener("input", renderProducts);
+  productSearch.addEventListener("focus", renderProducts);
+  productSearch.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      productSearch.value = "";
+      resultsEl.classList.remove("open");
+      productSearch.blur();
+    }
+  });
+  node.addEventListener("focusout", (event) => {
+    if (!node.contains(event.relatedTarget)) {
+      resultsEl.classList.remove("open");
+    }
+  });
   notes.addEventListener("change", () => saveAnnotation(pin.id, { notes: notes.value }, statusEl));
   renderProducts();
   return node;

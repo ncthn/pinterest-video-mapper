@@ -3,330 +3,248 @@
     "title": "Ada Bag",
     "handle": "ada-bag",
     "productType": "Tote Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/ada-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/ada-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/11_608f0424-8c83-46c8-b4a0-af9cf3d5fc84.png?v=1777649303",
+    "price": "44.95"
   },
   {
     "title": "Amira Bag",
     "handle": "amira-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/amira-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/amira-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/CelineBagblack.png?v=1777648703",
+    "price": "49.95"
   },
   {
     "title": "Anya Bag",
     "handle": "anya-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/anya-bag"
-  },
-  {
-    "title": "Artsy Bag Charm",
-    "handle": "artsy-bag-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/artsy-bag-charm"
-  },
-  {
-    "title": "Blush Baby Charm",
-    "handle": "blush-baby-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/blush-baby-charm"
-  },
-  {
-    "title": "Bordeaux Nights Charm",
-    "handle": "bordeaux-nights-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/bordeaux-nights-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/anya-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/black_b4859f3f-f7a9-491c-b59d-777c8180885c.jpg?v=1777648415",
+    "price": "49.95"
   },
   {
     "title": "Briar Bag",
     "handle": "briar-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/briar-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/briar-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/TheBriarBagBlack.png?v=1777648722",
+    "price": "79.95"
   },
   {
     "title": "Cassie Bag",
     "handle": "cassie-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/cassie-bag"
-  },
-  {
-    "title": "Cherry Luxe Charm",
-    "handle": "cherry-luxe-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/cherry-luxe-charm"
-  },
-  {
-    "title": "Cherry Pearl Charm",
-    "handle": "cherry-pearl-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/cherry-pearl-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/cassie-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Untitleddesign-2025-10-21T000223.978.png?v=1777648513",
+    "price": "49.95"
   },
   {
     "title": "Clover Bag",
     "handle": "clover-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/clover-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/clover-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/The_Clover_Bag_Black.png?v=1777648795",
+    "price": "59.95"
   },
   {
     "title": "Constance Bag",
     "handle": "constance-bag",
     "productType": "Tote Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/constance-bag"
-  },
-  {
-    "title": "Cosmic Cut Charm",
-    "handle": "cosmic-cut-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/cosmic-cut-charm"
-  },
-  {
-    "title": "Country Club Blooom Charm",
-    "handle": "country-club-blooom-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/country-club-blooom-charm"
-  },
-  {
-    "title": "Cowgirl Crush Charm",
-    "handle": "cowgirl-crush-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/cowgirl-crush-charm"
-  },
-  {
-    "title": "Downtown Pup Charm",
-    "handle": "downtown-pup-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/downtown-pup-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/constance-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Louvre_Tote_Black.png?v=1777649186",
+    "price": "89.95"
   },
   {
     "title": "Eden Bag",
     "handle": "eden-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/eden-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/eden-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095",
+    "price": "64.95"
   },
   {
     "title": "Esme Bag",
     "handle": "esme-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/esme-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/esme-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download-2025-09-03T160252.198.jpg?v=1777648671",
+    "price": "99.95"
   },
   {
     "title": "Foldable Makeup Bag",
     "handle": "foldable-makeup-bag",
     "productType": "Clutch",
-    "onlineStoreUrl": "https://bynyla.com/products/foldable-makeup-bag"
-  },
-  {
-    "title": "Frost Plush Hat",
-    "handle": "frost-plush-hat",
-    "productType": "Accessory",
-    "onlineStoreUrl": "https://bynyla.com/products/frost-plush-hat"
-  },
-  {
-    "title": "Fruit Club Charm",
-    "handle": "fruit-club-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/fruit-club-charm"
-  },
-  {
-    "title": "Fruit Loop Chain Charm",
-    "handle": "fruit-loop-chain-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/fruit-loop-chain-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/foldable-makeup-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/2_2ad249a1-f567-48f6-a8ff-70fe7235e43b.png?v=1777648397",
+    "price": "29.95"
   },
   {
     "title": "Hayden Bag",
     "handle": "hayden-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/hayden-bag"
-  },
-  {
-    "title": "Heartbreaker Club Charm",
-    "handle": "heartbreaker-club-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/heartbreaker-club-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/hayden-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/13_86f33792-7573-4b60-8812-ee07fec28557.png?v=1777648579",
+    "price": "49.95"
   },
   {
     "title": "Iris Bag",
     "handle": "iris-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/iris-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/iris-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/9_df67da1b-6ce4-4262-b7ee-e9d6729c03ee.png?v=1777650538",
+    "price": "4.95"
   },
   {
     "title": "Lila Bag",
     "handle": "lila-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/lila-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/lila-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/H076acb9e999c42749c8b2fa386356da87.jpg?v=1777648537",
+    "price": "59.95"
   },
   {
     "title": "Lily Bag",
     "handle": "lily-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/lily-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/lily-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/imgi_21_fond_15_1.png?v=1777649169",
+    "price": "109.95"
   },
   {
     "title": "Liv Bag",
     "handle": "liv-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/liv-bag"
-  },
-  {
-    "title": "Lucky Shot Charm",
-    "handle": "lucky-shot-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/lucky-shot-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/liv-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download-2025-09-03T163303.855.jpg?v=1777648654",
+    "price": "109.95"
   },
   {
     "title": "Luna Bag",
     "handle": "luna-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/luna-bag"
-  },
-  {
-    "title": "Luna Bloom Charm",
-    "handle": "luna-bloom-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/luna-bloom-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/luna-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Petite_Luna_Bag_Black.jpg?v=1777648471",
+    "price": "49.95"
   },
   {
     "title": "Mabel Bag",
     "handle": "mabel-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/mabel-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/mabel-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download_70.jpg?v=1777649243",
+    "price": "59.95"
   },
   {
     "title": "Margot Bag",
     "handle": "margot-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/margot-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/margot-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264",
+    "price": "64.95"
   },
   {
     "title": "Marlow Bag",
     "handle": "marlow-bag",
     "productType": "Tote Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/marlow-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/marlow-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/9_5c28ca69-5e19-4969-8ef3-3a4dcfd4b473.png?v=1777648596",
+    "price": "59.95"
   },
   {
     "title": "Maya Bag",
     "handle": "maya-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/maya-bag"
-  },
-  {
-    "title": "Midnight Garden Charm",
-    "handle": "midnight-garden-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/midnight-garden-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/maya-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/black_f3386e4c-1b02-49b1-8b0c-de9139b8d56e.jpg?v=1777648562",
+    "price": "94.95"
   },
   {
     "title": "Mira Bag",
     "handle": "mira-bag",
     "productType": "Tote Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/mira-bag"
-  },
-  {
-    "title": "Mystery Bag Charm",
-    "handle": "mystery-bag-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/mystery-bag-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/mira-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/black_dae2aabb-546f-4155-a0e4-90bdca36c3e2.jpg?v=1777648337",
+    "price": "69.95"
   },
   {
     "title": "Nina Bag",
     "handle": "nina-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/nina-bag"
-  },
-  {
-    "title": "Pearl Bloom Charm",
-    "handle": "pearl-bloom-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/pearl-bloom-charm"
-  },
-  {
-    "title": "Plush Bucket Hat",
-    "handle": "plush-bucket",
-    "productType": "Accessory",
-    "onlineStoreUrl": "https://bynyla.com/products/plush-bucket"
+    "onlineStoreUrl": "https://bynyla.com/products/nina-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download-2025-08-02T135714.255.jpg?v=1777649112",
+    "price": "69.95"
   },
   {
     "title": "Raven Bag",
     "handle": "raven-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/raven-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/raven-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/imgi_4_Sac-a-main-Check-Yourself-MAUV-STUDIO-STREETWEAR-Y2K-CLOTHING.jpg?v=1777648622",
+    "price": "49.95"
   },
   {
     "title": "Romy Bag",
     "handle": "romy-bag",
     "productType": "Crossbody Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/romy-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/romy-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/1_1aee658c-802a-440b-ad14-8e99f02bc27b.png?v=1777648355",
+    "price": "49.95"
   },
   {
     "title": "Sasha Bag",
     "handle": "sasha-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/sasha-bag"
-  },
-  {
-    "title": "Silver Darling Charm",
-    "handle": "silver-darling-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/silver-darling-charm"
-  },
-  {
-    "title": "Sky Girl Charm",
-    "handle": "sky-girl-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/sky-girl-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/sasha-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/The_Archive_Black.png?v=1777649288",
+    "price": "54.95"
   },
   {
     "title": "Sloane Bag",
     "handle": "sloane-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/sloane-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/sloane-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7_fcd25a76-233b-4655-83ba-e6dfb79c152e.png?v=1777648500",
+    "price": "84.95"
   },
   {
     "title": "Sofia Bag",
     "handle": "sofia-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/sofia-bag"
-  },
-  {
-    "title": "Soft Pop Chain Charm",
-    "handle": "soft-pop-chain-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/soft-pop-chain-charm"
-  },
-  {
-    "title": "Sweet Rebel Charm",
-    "handle": "sweet-rebel-charm",
-    "productType": "Bag Charm",
-    "onlineStoreUrl": "https://bynyla.com/products/sweet-rebel-charm"
+    "onlineStoreUrl": "https://bynyla.com/products/sofia-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Saria_Bag_Black.png?v=1777648385",
+    "price": "144.95"
   },
   {
     "title": "Talia Bag",
     "handle": "talia-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/talia-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/talia-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/1_33024331-befd-451c-bd6b-d8c7275db369.png?v=1777648363",
+    "price": "69.95"
   },
   {
     "title": "Tess Bag",
     "handle": "tess-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/tess-bag"
-  },
-  {
-    "title": "The Aura Clip",
-    "handle": "the-aura-clip",
-    "productType": "Clutch",
-    "onlineStoreUrl": "https://bynyla.com/products/the-aura-clip"
+    "onlineStoreUrl": "https://bynyla.com/products/tess-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/burgundy_901de445-c643-4f66-a868-dc93bd7454a4.jpg?v=1777648424",
+    "price": "49.95"
   },
   {
     "title": "Vera Bag",
     "handle": "vera-bag",
     "productType": "Shoulder Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/vera-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/vera-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/VeraBagBlack.png?v=1777648687",
+    "price": "69.95"
   },
   {
     "title": "Wren Bag",
     "handle": "wren-bag",
     "productType": "Tote Bag",
-    "onlineStoreUrl": "https://bynyla.com/products/wren-bag"
+    "onlineStoreUrl": "https://bynyla.com/products/wren-bag",
+    "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/cherry_color.jpg?v=1777648441",
+    "price": "59.95"
   }
 ]
