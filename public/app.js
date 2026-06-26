@@ -5,7 +5,8 @@ const unmappedEl = document.querySelector("#unmappedOnly");
 const logoFilterEl = document.querySelector("#logoFilter");
 const countEl = document.querySelector("#count");
 const loadMoreEl = document.querySelector("#loadMore");
-const PAGE_SIZE = 18;
+const PAGE_SIZE = 8;
+const VIDEO_AHEAD = 2;
 
 const popularHandles = [
   "nina-bag",
@@ -27,7 +28,8 @@ let state = {
 };
 
 let renderedCount = PAGE_SIZE;
-let videoObserver = null;
+let rowObserver = null;
+let syncQueued = false;
 
 function normalize(text) {
   return String(text || "").toLowerCase().trim();
@@ -122,6 +124,8 @@ function attachLazyVideo(video, pin) {
   video.dataset.primarySrc = primarySrc;
   video.dataset.fallbackSrc = pin.videoUrl || "";
   video.poster = pin.thumbnail || "";
+  video.muted = true;
+  video.playsInline = true;
   video.defaultPlaybackRate = 2;
   video.playbackRate = 2;
   video.addEventListener("loadedmetadata", () => {
@@ -132,11 +136,63 @@ function attachLazyVideo(video, pin) {
       video.src = video.dataset.fallbackSrc;
     }
   }, { once: true });
-  videoObserver?.observe(video);
 }
 
-function renderRow(pin) {
+function loadVideo(video, shouldPlay = false) {
+  if (!video.src && video.dataset.primarySrc) {
+    video.src = video.dataset.primarySrc;
+    video.load();
+  }
+  if (shouldPlay) {
+    video.playbackRate = 2;
+    video.play().catch(() => {});
+  } else {
+    video.pause();
+  }
+}
+
+function unloadVideo(video) {
+  if (!video.src) return;
+  video.pause();
+  video.removeAttribute("src");
+  video.load();
+}
+
+function syncVideoWindow() {
+  const rows = [...rowsEl.querySelectorAll(".pin-row")];
+  if (!rows.length) return;
+
+  const viewportTop = document.querySelector(".topbar")?.getBoundingClientRect().bottom || 0;
+  const activeRow = rows.find((row) => {
+    const rect = row.getBoundingClientRect();
+    return rect.bottom > viewportTop + 8 && rect.top < window.innerHeight;
+  }) || rows[0];
+  const activeIndex = Number(activeRow.dataset.index || 0);
+  const keep = new Set(
+    Array.from({ length: VIDEO_AHEAD + 1 }, (_, offset) => activeIndex + offset),
+  );
+
+  rows.forEach((row) => {
+    const rowIndex = Number(row.dataset.index);
+    const video = row.querySelector("video");
+    if (!video) return;
+    if (keep.has(rowIndex)) loadVideo(video, rowIndex === activeIndex);
+    else unloadVideo(video);
+  });
+}
+
+function queueVideoSync() {
+  if (syncQueued) return;
+  syncQueued = true;
+  requestAnimationFrame(() => {
+    syncQueued = false;
+    syncVideoWindow();
+  });
+}
+
+function renderRow(pin, rowIndex) {
   const node = template.content.firstElementChild.cloneNode(true);
+  node.dataset.index = String(rowIndex);
   const video = node.querySelector("video");
   const title = node.querySelector(".pin-title");
   const description = node.querySelector(".pin-description");
@@ -250,26 +306,22 @@ function pinVisible(pin) {
 }
 
 function renderRows() {
-  if (!videoObserver) {
-    videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const video = entry.target;
-        if (!video.src && video.dataset.primarySrc) {
-          video.src = video.dataset.primarySrc;
-        }
-        videoObserver.unobserve(video);
-      });
-    }, { rootMargin: "700px 0px" });
+  if (!rowObserver) {
+    rowObserver = new IntersectionObserver(queueVideoSync, { rootMargin: "0px", threshold: 0.01 });
   } else {
-    videoObserver.disconnect();
+    rowObserver.disconnect();
   }
   rowsEl.innerHTML = "";
   const visible = state.pins.filter(pinVisible);
   const page = visible.slice(0, renderedCount);
-  page.forEach((pin) => rowsEl.append(renderRow(pin)));
+  page.forEach((pin, index) => {
+    const row = renderRow(pin, index);
+    rowsEl.append(row);
+    rowObserver.observe(row);
+  });
   countEl.textContent = `${page.length}/${visible.length} shown · ${state.pins.length} total videos`;
   loadMoreEl.hidden = page.length >= visible.length;
+  queueVideoSync();
 }
 
 async function init() {
@@ -284,6 +336,8 @@ async function init() {
     renderedCount += PAGE_SIZE;
     renderRows();
   });
+  window.addEventListener("scroll", queueVideoSync, { passive: true });
+  window.addEventListener("resize", queueVideoSync, { passive: true });
   renderRows();
 }
 

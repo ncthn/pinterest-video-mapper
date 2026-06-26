@@ -128,6 +128,8 @@ textarea {
 }
 
 .pin-row {
+  content-visibility: auto;
+  contain-intrinsic-size: 760px;
   display: grid;
   grid-template-columns: 240px minmax(220px, 1fr) minmax(430px, 620px);
   gap: 18px;
