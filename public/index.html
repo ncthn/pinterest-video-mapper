@@ -37,6 +37,7 @@
       <article class="pin-row">
         <div class="preview">
           <video controls preload="metadata"></video>
+          <p class="speed-note">2x speed by default. Hover or tap to scrub.</p>
         </div>
         <div class="meta">
           <a class="pin-title" target="_blank" rel="noreferrer"></a>
@@ -48,6 +49,16 @@
             <button data-logo="unknown">Unknown</button>
             <button data-logo="no_logo">No logo</button>
             <button data-logo="logo">Logo</button>
+          </div>
+          <div class="segmented" role="group" aria-label="Text status">
+            <button data-text-status="unknown">Text?</button>
+            <button data-text-status="no_text">No text</button>
+            <button data-text-status="has_text">Has text</button>
+          </div>
+          <div class="segmented" role="group" aria-label="Text language">
+            <button data-text-language="unknown">Lang?</button>
+            <button data-text-language="english">English</button>
+            <button data-text-language="not_english">Not English</button>
           </div>
           <div class="product-picker">
             <input class="product-search" type="search" placeholder="Search Bynyla products" />

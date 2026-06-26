@@ -99,6 +99,8 @@ function renderRow(pin) {
   const description = node.querySelector(".pin-description");
   const pinId = node.querySelector(".pin-id");
   const logoButtons = [...node.querySelectorAll("[data-logo]")];
+  const textStatusButtons = [...node.querySelectorAll("[data-text-status]")];
+  const textLanguageButtons = [...node.querySelectorAll("[data-text-language]")];
   const productSearch = node.querySelector(".product-search");
   const selectedEl = node.querySelector(".selected-products");
   const popularEl = node.querySelector(".popular-products");
@@ -110,6 +112,11 @@ function renderRow(pin) {
   video.src = pin.localVideo || pin.videoUrl || "";
   video.dataset.fallbackSrc = pin.videoUrl || "";
   video.poster = pin.thumbnail || "";
+  video.defaultPlaybackRate = 2;
+  video.playbackRate = 2;
+  video.addEventListener("loadedmetadata", () => {
+    video.playbackRate = 2;
+  });
   video.addEventListener("error", () => {
     if (video.dataset.fallbackSrc && video.src !== video.dataset.fallbackSrc) {
       video.src = video.dataset.fallbackSrc;
@@ -126,6 +133,25 @@ function renderRow(pin) {
     button.classList.toggle("active", button.dataset.logo === logoStatus);
     button.addEventListener("click", () => {
       saveAnnotation(pin.id, { logoStatus: button.dataset.logo }, statusEl).then(renderRows);
+    });
+  });
+
+  const textStatus = annotation.textStatus || "unknown";
+  textStatusButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.textStatus === textStatus);
+    button.addEventListener("click", () => {
+      const patch = { textStatus: button.dataset.textStatus };
+      if (patch.textStatus === "no_text") patch.textLanguage = "not_applicable";
+      saveAnnotation(pin.id, patch, statusEl).then(renderRows);
+    });
+  });
+
+  const textLanguage = annotation.textLanguage || "unknown";
+  textLanguageButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.textLanguage === textLanguage);
+    button.disabled = textStatus === "no_text";
+    button.addEventListener("click", () => {
+      saveAnnotation(pin.id, { textLanguage: button.dataset.textLanguage, textStatus: "has_text" }, statusEl).then(renderRows);
     });
   });
 
@@ -160,7 +186,13 @@ function pinVisible(pin) {
   const ann = state.annotations[pin.id] || {};
   const productText = selectedProducts(pin.id).map((product) => product.title).join(" ");
   const haystack = normalize(`${pin.title} ${pin.description} ${productText}`);
-  const hasMapping = Boolean((ann.products || []).length || (ann.logoStatus && ann.logoStatus !== "unknown") || ann.notes);
+  const textDone = ann.textStatus === "no_text" || (ann.textStatus === "has_text" && ann.textLanguage && ann.textLanguage !== "unknown");
+  const hasMapping = Boolean(
+    (ann.products || []).length
+      && ann.logoStatus
+      && ann.logoStatus !== "unknown"
+      && textDone,
+  );
   if (query && !haystack.includes(query)) return false;
   if (unmappedEl.checked && hasMapping) return false;
   if (logoFilterEl.value && (ann.logoStatus || "unknown") !== logoFilterEl.value) return false;

@@ -137,6 +137,13 @@ textarea {
   background: #eceff5;
 }
 
+.speed-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+}
+
 .pin-title {
   color: var(--text);
   font-size: 19px;
@@ -180,6 +187,11 @@ textarea {
   color: var(--accent);
   background: white;
   box-shadow: 0 1px 4px rgba(26, 29, 38, 0.1);
+}
+
+.segmented button:disabled {
+  color: #aab0bf;
+  cursor: not-allowed;
 }
 
 .selected-products,

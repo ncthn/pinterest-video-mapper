@@ -152,7 +152,17 @@ app.get("/api/export.csv", async (_req, res, next) => {
       readJson(path.join(__dirname, "data", "pins.json"), []),
       readAnnotations(),
     ]);
-    const headers = ["pin_id", "source_url", "title", "logo_status", "product_titles", "product_handles", "notes"];
+    const headers = [
+      "pin_id",
+      "source_url",
+      "title",
+      "logo_status",
+      "text_status",
+      "text_language",
+      "product_titles",
+      "product_handles",
+      "notes",
+    ];
     const rows = pins.map((pin) => {
       const ann = annotations[pin.id] || {};
       const products = ann.products || [];
@@ -161,6 +171,8 @@ app.get("/api/export.csv", async (_req, res, next) => {
         pin.sourceUrl,
         pin.title,
         ann.logoStatus || "unknown",
+        ann.textStatus || "unknown",
+        ann.textLanguage || "unknown",
         products.map((product) => product.title),
         products.map((product) => product.handle),
         ann.notes || "",
