@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest Video Mapper</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Bynyla internal</p>
+        <h1>Pinterest Video Mapper</h1>
+      </div>
+      <div class="actions">
+        <a class="button secondary" href="/api/export.json">Export JSON</a>
+        <a class="button" href="/api/export.csv">Export CSV</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls">
+        <input id="search" type="search" placeholder="Search pins or products" />
+        <label><input id="unmappedOnly" type="checkbox" /> Unmapped only</label>
+        <select id="logoFilter">
+          <option value="">All logo statuses</option>
+          <option value="unknown">Unknown</option>
+          <option value="no_logo">No logo</option>
+          <option value="logo">Logo</option>
+        </select>
+        <span id="count"></span>
+      </section>
+      <section id="rows" class="rows"></section>
+    </main>
+
+    <template id="row-template">
+      <article class="pin-row">
+        <div class="preview">
+          <video controls preload="metadata"></video>
+        </div>
+        <div class="meta">
+          <a class="pin-title" target="_blank" rel="noreferrer"></a>
+          <p class="pin-description"></p>
+          <p class="pin-id"></p>
+        </div>
+        <div class="mapping">
+          <div class="segmented" role="group" aria-label="Logo status">
+            <button data-logo="unknown">Unknown</button>
+            <button data-logo="no_logo">No logo</button>
+            <button data-logo="logo">Logo</button>
+          </div>
+          <div class="product-picker">
+            <input class="product-search" type="search" placeholder="Search Bynyla products" />
+            <div class="selected-products"></div>
+            <div class="popular-products"></div>
+            <div class="product-results"></div>
+          </div>
+          <textarea class="notes" placeholder="Notes"></textarea>
+          <p class="save-status">Saved</p>
+        </div>
+      </article>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
