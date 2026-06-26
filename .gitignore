@@ -3,6 +3,8 @@ node_modules/
 data/annotations.json
 data/download-errors.json
 data/vertex-errors.json
+data/publish-queue.json
+data/publish-manifest.jsonl
 .cache/
 public/videos/*.mp4
 public/videos/*.part
