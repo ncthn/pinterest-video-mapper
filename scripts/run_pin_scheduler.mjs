@@ -235,7 +235,10 @@ async function uploadCoverToShopify(config, framePath, job) {
 async function uploadPinterestVideo(pinterestToken, videoPath) {
   const registered = await pinterestRequest(pinterestToken, "POST", "/media", { media_type: "video" });
   const mediaId = registered.media_id;
-  const fields = Object.fromEntries((registered.upload_parameters || []).map((param) => [param.name, param.value]));
+  const params = registered.upload_parameters || {};
+  const fields = Array.isArray(params)
+    ? Object.fromEntries(params.map((param) => [param.name, param.value]))
+    : params;
   await postMultipart(registered.upload_url, fields, "file", videoPath, "video/mp4");
   for (let attempt = 0; attempt < 60; attempt += 1) {
     const media = await pinterestRequest(pinterestToken, "GET", `/media/${mediaId}`);
