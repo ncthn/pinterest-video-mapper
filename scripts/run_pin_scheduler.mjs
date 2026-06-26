@@ -328,13 +328,25 @@ async function main() {
       const missingBoards = uniqueBoardNames.filter((boardName) => (
         !boards.some((board) => normalizeBoardName(board.name) === normalizeBoardName(boardName))
       ));
+      const createdBoards = [];
+      if (missingBoards.length && createMissingBoards) {
+        for (const boardName of missingBoards) {
+          const board = await pinterestRequest(pinterestToken, "POST", "/boards", {
+            name: boardName,
+            description: `${boardName.toLowerCase()} saves and video pins`,
+            privacy: "PUBLIC",
+          });
+          createdBoards.push({ id: board.id, name: board.name });
+        }
+      }
       console.log(JSON.stringify({
-        ok: missingBoards.length === 0,
+        ok: missingBoards.length === 0 || createMissingBoards,
         jobs: queue.jobs?.length || 0,
         boardNames: uniqueBoardNames,
         missingBoards,
+        createdBoards,
       }, null, 2));
-      if (missingBoards.length) process.exitCode = 2;
+      if (missingBoards.length && !createMissingBoards) process.exitCode = 2;
       return;
     }
     const job = selectNextDueJob(queue.jobs || [], new Date(), timezone);
