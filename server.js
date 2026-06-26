@@ -63,8 +63,8 @@ function asCsvCell(value) {
   return `"${text.replaceAll('"', '""')}"`;
 }
 
-app.use(requireAuth);
 app.use(express.static(path.join(__dirname, "public")));
+app.use(requireAuth);
 
 app.get("/login", (_req, res) => {
   res.type("html").send(`<!doctype html>
