@@ -200,6 +200,22 @@ textarea {
   gap: 12px;
 }
 
+.ai-suggestion {
+  margin: 0;
+  padding: 9px 10px;
+  border: 1px solid rgba(11, 124, 255, 0.16);
+  border-radius: 8px;
+  color: #24446f;
+  background: var(--accent-soft);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.ai-suggestion:empty {
+  display: none;
+}
+
 .segmented {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

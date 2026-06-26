@@ -2,5 +2,7 @@ node_modules/
 .env
 data/annotations.json
 data/download-errors.json
+data/vertex-errors.json
+.cache/
 public/videos/*.mp4
 public/videos/*.part

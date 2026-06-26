@@ -211,6 +211,7 @@ function renderRow(pin, rowIndex) {
   const logoButtons = [...node.querySelectorAll("[data-logo]")];
   const textStatusButtons = [...node.querySelectorAll("[data-text-status]")];
   const textLanguageButtons = [...node.querySelectorAll("[data-text-language]")];
+  const aiSuggestion = node.querySelector(".ai-suggestion");
   const productSearch = node.querySelector(".product-search");
   const selectedEl = node.querySelector(".selected-products");
   const popularEl = node.querySelector(".popular-products");
@@ -253,6 +254,18 @@ function renderRow(pin, rowIndex) {
       saveAnnotation(pin.id, { textLanguage: button.dataset.textLanguage, textStatus: "has_text" }, statusEl).then(renderRows);
     });
   });
+
+  if (annotation.vertex) {
+    const bits = [
+      annotation.vertex.hasLogo ? `Logo: ${annotation.vertex.logoBrand || "yes"}` : "No logo",
+      annotation.vertex.hasText ? `Text: ${annotation.vertex.textLanguage || "yes"}` : "No text",
+    ];
+    if (annotation.vertex.visibleText) bits.push(`"${annotation.vertex.visibleText}"`);
+    aiSuggestion.textContent = `AI: ${bits.join(" · ")}`;
+    aiSuggestion.title = annotation.vertex.reason || "";
+  } else {
+    aiSuggestion.textContent = "";
+  }
 
   const popularProducts = popularHandles
     .map((handle) => state.products.find((product) => product.handle === handle))
