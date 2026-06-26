@@ -116,6 +116,17 @@ textarea {
   gap: 14px;
 }
 
+.load-more {
+  display: block;
+  width: min(360px, 100%);
+  margin: 18px auto 0;
+  padding: 14px 18px;
+}
+
+.load-more[hidden] {
+  display: none;
+}
+
 .pin-row {
   display: grid;
   grid-template-columns: 240px minmax(220px, 1fr) minmax(430px, 620px);

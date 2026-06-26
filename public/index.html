@@ -31,12 +31,13 @@
         <span id="count"></span>
       </section>
       <section id="rows" class="rows"></section>
+      <button id="loadMore" class="load-more" type="button">Load more</button>
     </main>
 
     <template id="row-template">
       <article class="pin-row">
         <div class="preview">
-          <video controls preload="metadata"></video>
+          <video controls preload="none"></video>
           <p class="speed-note">2x speed by default. Hover or tap to scrub.</p>
         </div>
         <div class="meta">

@@ -4,6 +4,8 @@ const searchEl = document.querySelector("#search");
 const unmappedEl = document.querySelector("#unmappedOnly");
 const logoFilterEl = document.querySelector("#logoFilter");
 const countEl = document.querySelector("#count");
+const loadMoreEl = document.querySelector("#loadMore");
+const PAGE_SIZE = 18;
 
 const popularHandles = [
   "nina-bag",
@@ -23,6 +25,9 @@ let state = {
   products: [],
   annotations: {},
 };
+
+let renderedCount = PAGE_SIZE;
+let videoObserver = null;
 
 function normalize(text) {
   return String(text || "").toLowerCase().trim();
@@ -92,6 +97,24 @@ function renderProductChips(container, pin, products, statusEl, variant = "") {
   });
 }
 
+function attachLazyVideo(video, pin) {
+  const primarySrc = pin.localVideo || pin.videoUrl || "";
+  video.dataset.primarySrc = primarySrc;
+  video.dataset.fallbackSrc = pin.videoUrl || "";
+  video.poster = pin.thumbnail || "";
+  video.defaultPlaybackRate = 2;
+  video.playbackRate = 2;
+  video.addEventListener("loadedmetadata", () => {
+    video.playbackRate = 2;
+  });
+  video.addEventListener("error", () => {
+    if (video.dataset.fallbackSrc && video.src !== video.dataset.fallbackSrc) {
+      video.src = video.dataset.fallbackSrc;
+    }
+  }, { once: true });
+  videoObserver?.observe(video);
+}
+
 function renderRow(pin) {
   const node = template.content.firstElementChild.cloneNode(true);
   const video = node.querySelector("video");
@@ -109,19 +132,7 @@ function renderRow(pin) {
   const statusEl = node.querySelector(".save-status");
   const annotation = state.annotations[pin.id] || {};
 
-  video.src = pin.localVideo || pin.videoUrl || "";
-  video.dataset.fallbackSrc = pin.videoUrl || "";
-  video.poster = pin.thumbnail || "";
-  video.defaultPlaybackRate = 2;
-  video.playbackRate = 2;
-  video.addEventListener("loadedmetadata", () => {
-    video.playbackRate = 2;
-  });
-  video.addEventListener("error", () => {
-    if (video.dataset.fallbackSrc && video.src !== video.dataset.fallbackSrc) {
-      video.src = video.dataset.fallbackSrc;
-    }
-  }, { once: true });
+  attachLazyVideo(video, pin);
   title.href = pin.sourceUrl;
   title.textContent = pin.title || pin.id;
   description.textContent = pin.description || "No description scraped.";
@@ -200,17 +211,40 @@ function pinVisible(pin) {
 }
 
 function renderRows() {
+  if (!videoObserver) {
+    videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const video = entry.target;
+        if (!video.src && video.dataset.primarySrc) {
+          video.src = video.dataset.primarySrc;
+        }
+        videoObserver.unobserve(video);
+      });
+    }, { rootMargin: "700px 0px" });
+  } else {
+    videoObserver.disconnect();
+  }
   rowsEl.innerHTML = "";
   const visible = state.pins.filter(pinVisible);
-  visible.forEach((pin) => rowsEl.append(renderRow(pin)));
-  countEl.textContent = `${visible.length}/${state.pins.length} videos`;
+  const page = visible.slice(0, renderedCount);
+  page.forEach((pin) => rowsEl.append(renderRow(pin)));
+  countEl.textContent = `${page.length}/${visible.length} shown · ${state.pins.length} total videos`;
+  loadMoreEl.hidden = page.length >= visible.length;
 }
 
 async function init() {
   const res = await fetch("/api/bootstrap");
   if (!res.ok) throw new Error("Could not load mapper data");
   state = await res.json();
-  [searchEl, unmappedEl, logoFilterEl].forEach((el) => el.addEventListener("input", renderRows));
+  [searchEl, unmappedEl, logoFilterEl].forEach((el) => el.addEventListener("input", () => {
+    renderedCount = PAGE_SIZE;
+    renderRows();
+  }));
+  loadMoreEl.addEventListener("click", () => {
+    renderedCount += PAGE_SIZE;
+    renderRows();
+  });
   renderRows();
 }
 
