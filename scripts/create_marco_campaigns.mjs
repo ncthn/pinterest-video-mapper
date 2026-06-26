@@ -5,7 +5,7 @@ import { execFileSync } from "node:child_process";
 const firestoreProject = process.env.FIRESTORE_PROJECT || "gen-lang-client-0878196270";
 const firestoreDb = process.env.FIRESTORE_DB || "(default)";
 const pinterestApi = "https://api.pinterest.com/v5";
-const startTime = Math.floor(new Date("2026-06-26T22:00:00.000Z").getTime() / 1000); // 2026-06-27 00:00 Europe/Paris
+const startTime = Math.floor(new Date("2026-06-27T00:00:00.000Z").getTime() / 1000);
 const dailySpendCap = 7_000_000;
 const promotionId = "7834020584286";
 
