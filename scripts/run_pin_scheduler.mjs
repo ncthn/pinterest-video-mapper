@@ -327,7 +327,12 @@ async function main() {
   const preflight = hasFlag("preflight");
   const createMissingBoards = hasFlag("create-missing-boards");
   const timezone = argValue("timezone", DEFAULT_TIMEZONE);
-  const lockPath = path.join(root, ".cache/publish.lock");
+  const lockName = crypto
+    .createHash("sha1")
+    .update(queuePath)
+    .digest("hex")
+    .slice(0, 12);
+  const lockPath = path.join(root, `.cache/publish-${lockName}.lock`);
   const releaseLock = await acquireLock(lockPath);
   try {
     const queue = await readJson(queuePath);
