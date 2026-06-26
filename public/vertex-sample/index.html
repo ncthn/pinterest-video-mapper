@@ -1,0 +1,314 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Vertex Mapper Sample</title>
+<style>
+body{font-family:Figtree,system-ui,sans-serif;background:#f6f7fb;color:#1a1d26;margin:0}header{position:sticky;top:0;background:white;border-bottom:1px solid #e4e7ef;padding:18px 24px;z-index:2}h1{margin:0;font-size:24px}main{padding:18px;display:grid;gap:14px}.row{display:grid;grid-template-columns:220px minmax(260px,1.2fr) 240px 280px minmax(220px,.8fr);gap:14px;background:#fff;border:1px solid #e4e7ef;border-radius:10px;padding:12px;align-items:start}.frames{display:grid;grid-template-columns:1fr 1fr;gap:8px}.frames img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;background:#eef1f7}.meta a{font-weight:800;color:#1a1d26;text-decoration:none;font-size:16px}.meta p,.classification p,.reason{color:#73788a;line-height:1.35}.classification .text{font-style:italic;color:#1a1d26}.bags{display:grid;grid-template-columns:1fr 1fr;gap:10px}.bags div{border:1px solid #e4e7ef;border-radius:8px;padding:8px;background:#fafbff}.bags img{width:100%;height:120px;object-fit:contain;background:white;border-radius:6px}.bags b,.bags span{display:block;font-size:12px;margin-bottom:6px}.reason{font-size:13px}@media(max-width:1100px){.row{grid-template-columns:1fr}}
+</style></head><body><header><h1>Vertex mapper sample</h1><p>Two frames per video: 0s and 1s. Model: gemini-2.5-flash. Sample size: 12.</p><a href="results.json">Raw JSON</a> · <a href="bynyla-product-catalog.jpg">Product catalog sheet</a></header><main>
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145310703535_0s.jpg" loading="lazy"><img src="frames/887772145310703535_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145310703535/" target="_blank">Angel Bag - The Perfect Back to School Bag</a>
+        <p>Heading back to school? 🎓
+
+Meet the Angel Leather Bag – your new go-to everyday bag. Spacious enough for your laptop, notebooks, and daily essentials, with multiple pockets to keep you perfectly organized.
+
+A chic, practical design made to match every outfit. </p>
+        <small>887772145310703535</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">just released: the most perfect bag for university</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264"><span>Margot Bag</span></div>
+        <div><b>Vertex pick</b><span>None · 0.9</span></div>
+      </div>
+      <div class="reason">The bag in the video is a dark, slouchy hobo/tote style bag with a distinct front vertical zipper pocket and two side flap pockets, along with both shoulder and cross-body straps. After reviewing the Bynyla catalog, no product perfectly matches this specific combination of features, particularly the pocket design and overall silhouette. While some bags share a dark color or a slouchy aesthetic, none are a close visual match.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145310082729_0s.jpg" loading="lazy"><img src="frames/887772145310082729_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145310082729/" target="_blank">Angel Bag – The Perfect Everyday Bag</a>
+        <p>Meet the Angel Bag – your new go-to for everyday elegance.
+
+Crafted from high-quality vegan leather, it’s spacious enough to fit your laptop, essentials, and even your full makeup kit – all while staying sleek and lightweight.
+
+Whether you’re heading to work, </p>
+        <small>887772145310082729</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>True</strong> Apple</p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">STEVEN BARTLETT THE DIARY OF A CEO 33 LAWS OF BUSINESS &amp; LIFE</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264"><span>Margot Bag</span></div>
+        <div><b>Vertex pick</b><span>None · 0.9</span></div>
+      </div>
+      <div class="reason">An Apple logo is visible on the iPad in Image 2. Readable English text from a book title is visible in Image 2. No Bynyla product closely matches the competitor&#x27;s bag in terms of its soft structure, double top handles, and specific body shape with side details. The color is also not a direct match in the catalog.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145310703153_0s.jpg" loading="lazy"><img src="frames/887772145310703153_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145310703153/" target="_blank">Angel leather bag - The Perfect Back to School Bag</a>
+        <p>Heading back to school? 🎓 
+
+Meet the Angel leather bag – your new go-to everyday bag. Spacious enough for your laptop, notebooks, and daily essentials, with multiple pockets to keep you perfectly organized. 
+
+A chic, practical design made to match every outfit</p>
+        <small>887772145310703153</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">pov: you find the perfect bag for university that fits everything</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264"><span>Margot Bag</span></div>
+        <div><b>Vertex pick</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/11_608f0424-8c83-46c8-b4a0-af9cf3d5fc84.png?v=1777649303"><span>Ada Bag · 0.85</span></div>
+      </div>
+      <div class="reason">The bag in the video is a black, soft-structured hobo/shoulder bag with a single wide strap. The Ada Bag from the catalog is a black hobo bag with a very similar soft, slouchy shape, and a comparable strap design, making it a strong visual match for the style and practicality implied by the video&#x27;s text.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145296456365_0s.jpg" loading="lazy"><img src="frames/887772145296456365_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145296456365/" target="_blank">Bogota Bag</a>
+        <p>Your new GO-TO everyday bag. Our Musthave shoulder bag has a round shape and a woven/braided design. The bag has a large main compartment with zip closure, and two smaller compartments with zip inside the bag and a small open pocket. The must-have bag is very </p>
+        <small>887772145296456365</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">POV: your sister bought you the perfect everyday bag for uni/ work ❤️ 2</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095"><span>Eden Bag</span></div>
+        <div><b>Vertex pick</b><span>None · 0</span></div>
+      </div>
+      <div class="reason">The bag in the video is a large, soft, woven/intrecciato clutch in a deep red/burgundy color. None of the Bynyla bags in the catalog match this specific woven texture or soft, slouchy clutch shape. While some Bynyla bags are red/burgundy (Lila, Tess, Wren), their style, material, and shape are significantly different.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145309977464_0s.jpg" loading="lazy"><img src="frames/887772145309977464_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145309977464/" target="_blank">Bogota Bag – The All-In-One Shoulder Bag</a>
+        <p>Your new GO-TO everyday bag. Our Musthave shoulder bag has a round shape and a woven/braided design. 
+
+The bag has a large main compartment with zip closure, and two smaller compartments with zip inside the bag and a small open pocket. 
+
+The must-have bag is v</p>
+        <small>887772145309977464</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">POV : you found THE perfect bag for summer season
+HELLO VICHY</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095"><span>Eden Bag</span></div>
+        <div><b>Vertex pick</b><span>None · 0.9</span></div>
+      </div>
+      <div class="reason">The video frames show a grey, woven/braided hobo-style bag. While the Luna Bag has a similar hobo shape, none of the Bynyla products in the catalog feature the distinctive woven/braided texture of the bag in the video. Therefore, no good match was found.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145310705097_0s.jpg" loading="lazy"><img src="frames/887772145310705097_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145310705097/" target="_blank">Bogota Bag – The Perfect Back to School Bag</a>
+        <p>Your new go-to school bag. 
+
+Designed with a chic woven shape and roomy compartments, it easily fits your MacBook 13”, notebooks, wallet, and more. 
+
+Multiple zip pockets keep your essentials perfectly organized. Spacious, stylish, and practical. 
+
+The perfect</p>
+        <small>887772145310705097</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>True</strong> Apple</p>
+        <p>Text: <strong>False</strong> · none</p>
+        <p class="text"></p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095"><span>Eden Bag</span></div>
+        <div><b>Vertex pick</b><span>None · 0.0</span></div>
+      </div>
+      <div class="reason">The bag in the video frames has a distinct woven/intrecciato pattern and a soft, slouchy crescent/hobo shape. None of the Bynyla products in the catalog feature this specific woven texture or the same soft, unstructured crescent shape. All Bynyla bags shown are more structured.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145309977597_0s.jpg" loading="lazy"><img src="frames/887772145309977597_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145309977597/" target="_blank">Bogota Bag – Your Must-Have Bag</a>
+        <p>Your new GO-TO everyday bag. Our Musthave shoulder bag has a round shape and a woven/braided design. 
+
+The bag has a large main compartment with zip closure, and two smaller compartments with zip inside the bag and a small open pocket. 
+
+The must-have bag is v</p>
+        <small>887772145309977597</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">never saw a girl that owns this bag that wasn&#x27;t the hottest person in the room
+HELLO VICHY</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095"><span>Eden Bag</span></div>
+        <div><b>Vertex pick</b><span>None · 0.9</span></div>
+      </div>
+      <div class="reason">No brand logo is visible on the bag. Overlaid text is clearly English. The bag in the video is a woven, slouchy hobo style in a deep red/burgundy color. None of the Bynyla bags in the provided catalog are woven, making a direct visual match impossible based on material and texture.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145308048732_0s.jpg" loading="lazy"><img src="frames/887772145308048732_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145308048732/" target="_blank">Die eine und einzige Bogota Bag</a>
+        <p>Deine neue Go-To-Tasche für jeden Tag.
+Unsere Must-Have-Schultertasche hat eine runde Form und ein geflochtenes Design. Sie verfügt über ein großes Hauptfach mit Reißverschluss, zwei kleinere Innenfächer mit Reißverschluss sowie eine kleine offene Innentasche.</p>
+        <small>887772145308048732</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>True</strong> Dior</p>
+        <p>Text: <strong>True</strong> · not_english</p>
+        <p class="text">Meine neue Alltagstasche, HELLO VICHY, Dior</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><img src="https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095"><span>Eden Bag</span></div>
+        <div><b>Vertex pick</b><span>None · 0.9</span></div>
+      </div>
+      <div class="reason">The bag in the video is a dark green, woven hobo bag. None of the Bynyla products in the catalog feature a woven texture or a similar dark green color. While some Bynyla bags are hobo-shaped (e.g., Sofia, Luna), their material and overall aesthetic do not match the video bag.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145311542484_0s.jpg" loading="lazy"><img src="frames/887772145311542484_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145311542484/" target="_blank">3-in-1 Bag for Work, Lunch &amp; Everyday Life</a>
+        <p>Own this fall with the must-have 3-in-1 Quilted Tote. 
+
+Crafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.
+
+With</p>
+        <small>887772145311542484</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">POV: You finally got the viral H&amp;M tote bag 👜🎀🥺</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><span>None</span></div>
+        <div><b>Vertex pick</b><span>None · 1</span></div>
+      </div>
+      <div class="reason">The bag in the video is a black, quilted, structured tote bag with gold hardware and an insulated compartment. None of the Bynyla products in the catalog match these specific visual characteristics, particularly the quilted pattern and the overall structured tote design with top handles.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145311542481_0s.jpg" loading="lazy"><img src="frames/887772145311542481_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145311542481/" target="_blank">3-in-1 Bag for Work, Lunch &amp; Everyday Life</a>
+        <p>Own this fall with the must-have 3-in-1 Quilted Tote. 
+
+Crafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.
+
+With</p>
+        <small>887772145311542481</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">The perfect workbag for her doesn&#x27;t exi....</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><span>None</span></div>
+        <div><b>Vertex pick</b><span>None · 0.1</span></div>
+      </div>
+      <div class="reason">The bag in the video is a structured, quilted tote bag with a distinct bottom compartment, which does not have a close visual match in the Bynyla catalog based on shape, material, or specific features. While some Bynyla bags are totes, none share the quilted design or the specific compartment structure.</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145311542449_0s.jpg" loading="lazy"><img src="frames/887772145311542449_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145311542449/" target="_blank">3-in-1 Bag for Work, Lunch &amp; Everyday Life</a>
+        <p>Own this fall with the must-have 3-in-1 Quilted Tote. 
+
+Crafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.
+
+With</p>
+        <small>887772145311542449</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">Girls RUN, don&#x27;t walk to H&amp;M 👀💕</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><span>None</span></div>
+        <div><b>Vertex pick</b><span>None · 1</span></div>
+      </div>
+      <div class="reason">The video features a large, structured, quilted black work tote bag with top handles and gold-tone hardware, designed to carry items like lunch. The Bynyla catalog does not contain any bags that visually match this specific style, size, or functionality. Most Bynyla bags are softer, smaller, or have different structural designs. Overlaid English text is clearly visible in both frames, but no brand logo is visible on the bag itself or any other item in the frame (the &#x27;H&amp;M&#x27; is part of the overlaid text, not a logo on an object).</div>
+    </article>
+    
+    <article class="row">
+      <div class="frames">
+        <img src="frames/887772145311542447_0s.jpg" loading="lazy"><img src="frames/887772145311542447_1s.jpg" loading="lazy">
+      </div>
+      <div class="meta">
+        <a href="https://www.pinterest.com/pin/887772145311542447/" target="_blank">3-in-1 Bag for Work, Lunch &amp; Everyday Life</a>
+        <p>Own this fall with the must-have 3-in-1 Quilted Tote. 
+
+Crafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.
+
+With</p>
+        <small>887772145311542447</small>
+      </div>
+      <div class="classification">
+        <b>Vertex</b>
+        <p>Logo: <strong>False</strong> </p>
+        <p>Text: <strong>True</strong> · english</p>
+        <p class="text">It&#x27;s not just any bag... It&#x27;s a 3 in 1 tote bag!💖</p>
+      </div>
+      <div class="bags">
+        <div><b>Seed/rule</b><span>None</span></div>
+        <div><b>Vertex pick</b><span>None · 0.9</span></div>
+      </div>
+      <div class="reason">No visible brand logo. English text is present in both frames. The bag in the video is a large, structured, quilted tote bag with multiple external zippered compartments. There is no visually similar bag in the Bynyla catalog, which primarily features softer, hobo-style, or smaller structured bags without quilting or the specific multi-compartment design.</div>
+    </article>
+    </main></body></html>

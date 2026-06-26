@@ -140,6 +140,10 @@ textarea {
   background: var(--surface);
 }
 
+.video-shell {
+  position: relative;
+}
+
 .preview video {
   display: block;
   width: 100%;
@@ -148,6 +152,21 @@ textarea {
   object-fit: cover;
   border-radius: 8px;
   background: #eceff5;
+}
+
+.video-hitbox {
+  position: absolute;
+  inset: 0 0 42px 0;
+  padding: 0;
+  border: 0;
+  border-radius: 8px 8px 0 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.video-hitbox:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .speed-note {

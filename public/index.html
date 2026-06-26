@@ -37,7 +37,10 @@
     <template id="row-template">
       <article class="pin-row">
         <div class="preview">
-          <video controls preload="none"></video>
+          <div class="video-shell">
+            <video controls preload="none"></video>
+            <button class="video-hitbox" type="button" aria-label="Play or pause video"></button>
+          </div>
           <p class="speed-note">2x speed by default. Hover or tap to scrub.</p>
         </div>
         <div class="meta">

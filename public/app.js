@@ -151,6 +151,16 @@ function loadVideo(video, shouldPlay = false) {
   }
 }
 
+function toggleVideoPlayback(video) {
+  loadVideo(video, false);
+  video.playbackRate = 2;
+  if (video.paused) {
+    video.play().catch(() => {});
+  } else {
+    video.pause();
+  }
+}
+
 function unloadVideo(video) {
   if (!video.src) return;
   video.pause();
@@ -194,6 +204,7 @@ function renderRow(pin, rowIndex) {
   const node = template.content.firstElementChild.cloneNode(true);
   node.dataset.index = String(rowIndex);
   const video = node.querySelector("video");
+  const videoHitbox = node.querySelector(".video-hitbox");
   const title = node.querySelector(".pin-title");
   const description = node.querySelector(".pin-description");
   const pinId = node.querySelector(".pin-id");
@@ -209,6 +220,7 @@ function renderRow(pin, rowIndex) {
   const annotation = state.annotations[pin.id] || {};
 
   attachLazyVideo(video, pin);
+  videoHitbox.addEventListener("click", () => toggleVideoPlayback(video));
   title.href = pin.sourceUrl;
   title.textContent = pin.title || pin.id;
   description.textContent = pin.description || "No description scraped.";

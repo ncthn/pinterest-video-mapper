@@ -1,0 +1,706 @@
+{
+  "products": [
+    {
+      "title": "Ada Bag",
+      "handle": "ada-bag",
+      "productType": "Tote Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/ada-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/11_608f0424-8c83-46c8-b4a0-af9cf3d5fc84.png?v=1777649303",
+      "price": "44.95"
+    },
+    {
+      "title": "Amira Bag",
+      "handle": "amira-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/amira-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/CelineBagblack.png?v=1777648703",
+      "price": "49.95"
+    },
+    {
+      "title": "Anya Bag",
+      "handle": "anya-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/anya-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/black_b4859f3f-f7a9-491c-b59d-777c8180885c.jpg?v=1777648415",
+      "price": "49.95"
+    },
+    {
+      "title": "Briar Bag",
+      "handle": "briar-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/briar-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/TheBriarBagBlack.png?v=1777648722",
+      "price": "79.95"
+    },
+    {
+      "title": "Cassie Bag",
+      "handle": "cassie-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/cassie-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Untitleddesign-2025-10-21T000223.978.png?v=1777648513",
+      "price": "49.95"
+    },
+    {
+      "title": "Clover Bag",
+      "handle": "clover-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/clover-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/The_Clover_Bag_Black.png?v=1777648795",
+      "price": "59.95"
+    },
+    {
+      "title": "Constance Bag",
+      "handle": "constance-bag",
+      "productType": "Tote Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/constance-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Louvre_Tote_Black.png?v=1777649186",
+      "price": "89.95"
+    },
+    {
+      "title": "Eden Bag",
+      "handle": "eden-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/eden-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095",
+      "price": "64.95"
+    },
+    {
+      "title": "Esme Bag",
+      "handle": "esme-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/esme-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download-2025-09-03T160252.198.jpg?v=1777648671",
+      "price": "99.95"
+    },
+    {
+      "title": "Foldable Makeup Bag",
+      "handle": "foldable-makeup-bag",
+      "productType": "Clutch",
+      "onlineStoreUrl": "https://bynyla.com/products/foldable-makeup-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/2_2ad249a1-f567-48f6-a8ff-70fe7235e43b.png?v=1777648397",
+      "price": "29.95"
+    },
+    {
+      "title": "Hayden Bag",
+      "handle": "hayden-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/hayden-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/13_86f33792-7573-4b60-8812-ee07fec28557.png?v=1777648579",
+      "price": "49.95"
+    },
+    {
+      "title": "Iris Bag",
+      "handle": "iris-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/iris-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/9_df67da1b-6ce4-4262-b7ee-e9d6729c03ee.png?v=1777650538",
+      "price": "4.95"
+    },
+    {
+      "title": "Lila Bag",
+      "handle": "lila-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/lila-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/H076acb9e999c42749c8b2fa386356da87.jpg?v=1777648537",
+      "price": "59.95"
+    },
+    {
+      "title": "Lily Bag",
+      "handle": "lily-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/lily-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/imgi_21_fond_15_1.png?v=1777649169",
+      "price": "109.95"
+    },
+    {
+      "title": "Liv Bag",
+      "handle": "liv-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/liv-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download-2025-09-03T163303.855.jpg?v=1777648654",
+      "price": "109.95"
+    },
+    {
+      "title": "Luna Bag",
+      "handle": "luna-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/luna-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Petite_Luna_Bag_Black.jpg?v=1777648471",
+      "price": "49.95"
+    },
+    {
+      "title": "Mabel Bag",
+      "handle": "mabel-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/mabel-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download_70.jpg?v=1777649243",
+      "price": "59.95"
+    },
+    {
+      "title": "Margot Bag",
+      "handle": "margot-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/margot-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264",
+      "price": "64.95"
+    },
+    {
+      "title": "Marlow Bag",
+      "handle": "marlow-bag",
+      "productType": "Tote Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/marlow-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/9_5c28ca69-5e19-4969-8ef3-3a4dcfd4b473.png?v=1777648596",
+      "price": "59.95"
+    },
+    {
+      "title": "Maya Bag",
+      "handle": "maya-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/maya-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/black_f3386e4c-1b02-49b1-8b0c-de9139b8d56e.jpg?v=1777648562",
+      "price": "94.95"
+    },
+    {
+      "title": "Mira Bag",
+      "handle": "mira-bag",
+      "productType": "Tote Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/mira-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/black_dae2aabb-546f-4155-a0e4-90bdca36c3e2.jpg?v=1777648337",
+      "price": "69.95"
+    },
+    {
+      "title": "Nina Bag",
+      "handle": "nina-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/nina-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/download-2025-08-02T135714.255.jpg?v=1777649112",
+      "price": "69.95"
+    },
+    {
+      "title": "Raven Bag",
+      "handle": "raven-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/raven-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/imgi_4_Sac-a-main-Check-Yourself-MAUV-STUDIO-STREETWEAR-Y2K-CLOTHING.jpg?v=1777648622",
+      "price": "49.95"
+    },
+    {
+      "title": "Romy Bag",
+      "handle": "romy-bag",
+      "productType": "Crossbody Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/romy-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/1_1aee658c-802a-440b-ad14-8e99f02bc27b.png?v=1777648355",
+      "price": "49.95"
+    },
+    {
+      "title": "Sasha Bag",
+      "handle": "sasha-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/sasha-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/The_Archive_Black.png?v=1777649288",
+      "price": "54.95"
+    },
+    {
+      "title": "Sloane Bag",
+      "handle": "sloane-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/sloane-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7_fcd25a76-233b-4655-83ba-e6dfb79c152e.png?v=1777648500",
+      "price": "84.95"
+    },
+    {
+      "title": "Sofia Bag",
+      "handle": "sofia-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/sofia-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Saria_Bag_Black.png?v=1777648385",
+      "price": "144.95"
+    },
+    {
+      "title": "Talia Bag",
+      "handle": "talia-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/talia-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/1_33024331-befd-451c-bd6b-d8c7275db369.png?v=1777648363",
+      "price": "69.95"
+    },
+    {
+      "title": "Tess Bag",
+      "handle": "tess-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/tess-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/burgundy_901de445-c643-4f66-a868-dc93bd7454a4.jpg?v=1777648424",
+      "price": "49.95"
+    },
+    {
+      "title": "Vera Bag",
+      "handle": "vera-bag",
+      "productType": "Shoulder Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/vera-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/VeraBagBlack.png?v=1777648687",
+      "price": "69.95"
+    },
+    {
+      "title": "Wren Bag",
+      "handle": "wren-bag",
+      "productType": "Tote Bag",
+      "onlineStoreUrl": "https://bynyla.com/products/wren-bag",
+      "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/cherry_color.jpg?v=1777648441",
+      "price": "59.95"
+    }
+  ],
+  "results": [
+    {
+      "pin": {
+        "id": "887772145310703535",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145310703535/",
+        "title": "Angel Bag - The Perfect Back to School Bag",
+        "description": "Heading back to school? 🎓\n\nMeet the Angel Leather Bag – your new go-to everyday bag. Spacious enough for your laptop, notebooks, and daily essentials, with multiple pockets to keep you perfectly organized.\n\nA chic, practical design made to match every outfit. Start the year strong with a bag that does it all 🤍",
+        "duration": 13.1,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/86/da/17/86da17c30188ba86ac83f973b333f618.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/sac-en-cuir-ange?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/86/da/17/86da17c30188ba86ac83f973b333f618_360w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145310703535.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "margot-bag",
+        "suggestedProductReason": "Angel -> Margot Bag"
+      },
+      "frames": [
+        "frames/887772145310703535_0s.jpg",
+        "frames/887772145310703535_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Margot Bag",
+        "handle": "margot-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/margot-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "just released: the most perfect bag for university",
+        "best_product_handle": null,
+        "confidence": 0.9,
+        "reason": "The bag in the video is a dark, slouchy hobo/tote style bag with a distinct front vertical zipper pocket and two side flap pockets, along with both shoulder and cross-body straps. After reviewing the Bynyla catalog, no product perfectly matches this specific combination of features, particularly the pocket design and overall silhouette. While some bags share a dark color or a slouchy aesthetic, none are a close visual match."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145310082729",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145310082729/",
+        "title": "Angel Bag – The Perfect Everyday Bag",
+        "description": "Meet the Angel Bag – your new go-to for everyday elegance.\n\nCrafted from high-quality vegan leather, it’s spacious enough to fit your laptop, essentials, and even your full makeup kit – all while staying sleek and lightweight.\n\nWhether you’re heading to work, a café, or a weekend trip, this timeless shoulder bag adds effortless style to every outfit.\n\nLoved for its premium feel, smart compartments, and versatile design.\n\nNow back in stock – but not for long.",
+        "duration": 8.3,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/3d/8b/3e/3d8b3e62b4e924eadf1c8bd51e8e2b79.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/sac-en-cuir-ange?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/3d/8b/3e/3d8b3e62b4e924eadf1c8bd51e8e2b79_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145310082729.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "margot-bag",
+        "suggestedProductReason": "Angel -> Margot Bag"
+      },
+      "frames": [
+        "frames/887772145310082729_0s.jpg",
+        "frames/887772145310082729_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Margot Bag",
+        "handle": "margot-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/margot-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": true,
+        "logo_brand": "Apple",
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "STEVEN BARTLETT THE DIARY OF A CEO 33 LAWS OF BUSINESS & LIFE",
+        "best_product_handle": null,
+        "confidence": 0.9,
+        "reason": "An Apple logo is visible on the iPad in Image 2. Readable English text from a book title is visible in Image 2. No Bynyla product closely matches the competitor's bag in terms of its soft structure, double top handles, and specific body shape with side details. The color is also not a direct match in the catalog."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145310703153",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145310703153/",
+        "title": "Angel leather bag - The Perfect Back to School Bag",
+        "description": "Heading back to school? 🎓 \n\nMeet the Angel leather bag – your new go-to everyday bag. Spacious enough for your laptop, notebooks, and daily essentials, with multiple pockets to keep you perfectly organized. \n\nA chic, practical design made to match every outfit. Start the year strong with a bag that does it all 🤍",
+        "duration": 13.067,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/f4/57/3f/f4573fc2e9ff59b324d1602432989e58.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/sac-en-cuir-ange?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/f4/57/3f/f4573fc2e9ff59b324d1602432989e58_360w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145310703153.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "margot-bag",
+        "suggestedProductReason": "Angel -> Margot Bag"
+      },
+      "frames": [
+        "frames/887772145310703153_0s.jpg",
+        "frames/887772145310703153_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Margot Bag",
+        "handle": "margot-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/margot-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/Product_to_Product_Shoot_Ecom_FRONT_0006.png?v=1777649264",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "pov: you find the perfect bag for university that fits everything",
+        "best_product_handle": "ada-bag",
+        "confidence": 0.85,
+        "reason": "The bag in the video is a black, soft-structured hobo/shoulder bag with a single wide strap. The Ada Bag from the catalog is a black hobo bag with a very similar soft, slouchy shape, and a comparable strap design, making it a strong visual match for the style and practicality implied by the video's text."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145296456365",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145296456365/",
+        "title": "Bogota Bag",
+        "description": "Your new GO-TO everyday bag. Our Musthave shoulder bag has a round shape and a woven/braided design. The bag has a large main compartment with zip closure, and two smaller compartments with zip inside the bag and a small open pocket. The must-have bag is very roomy, and can even fit a Macbook 13\" inside.\n",
+        "duration": 10.4,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/7f/d1/1a/7fd11a497bc17bacacb6397a3835a1f6.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/musthave-bag-wine-red?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/720p/7f/d1/1a/7fd11a497bc17bacacb6397a3835a1f6.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145296456365.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "eden-bag",
+        "suggestedProductReason": "Bogota -> Eden Bag"
+      },
+      "frames": [
+        "frames/887772145296456365_0s.jpg",
+        "frames/887772145296456365_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Eden Bag",
+        "handle": "eden-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/eden-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "POV: your sister bought you the perfect everyday bag for uni/ work ❤️ 2",
+        "best_product_handle": null,
+        "confidence": 0,
+        "reason": "The bag in the video is a large, soft, woven/intrecciato clutch in a deep red/burgundy color. None of the Bynyla bags in the catalog match this specific woven texture or soft, slouchy clutch shape. While some Bynyla bags are red/burgundy (Lila, Tess, Wren), their style, material, and shape are significantly different."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145309977464",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145309977464/",
+        "title": "Bogota Bag – The All-In-One Shoulder Bag",
+        "description": "Your new GO-TO everyday bag. Our Musthave shoulder bag has a round shape and a woven/braided design. \n\nThe bag has a large main compartment with zip closure, and two smaller compartments with zip inside the bag and a small open pocket. \n\nThe must-have bag is very roomy, and can even fit a Macbook 13\" inside.",
+        "duration": 14.767,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/f5/ad/49/f5ad49bb9f426ff5168d4e7038bb2c35.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/musthave-bag-wine-red?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/f5/ad/49/f5ad49bb9f426ff5168d4e7038bb2c35_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145309977464.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "eden-bag",
+        "suggestedProductReason": "Bogota -> Eden Bag"
+      },
+      "frames": [
+        "frames/887772145309977464_0s.jpg",
+        "frames/887772145309977464_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Eden Bag",
+        "handle": "eden-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/eden-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "POV : you found THE perfect bag for summer season\nHELLO VICHY",
+        "best_product_handle": null,
+        "confidence": 0.9,
+        "reason": "The video frames show a grey, woven/braided hobo-style bag. While the Luna Bag has a similar hobo shape, none of the Bynyla products in the catalog feature the distinctive woven/braided texture of the bag in the video. Therefore, no good match was found."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145310705097",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145310705097/",
+        "title": "Bogota Bag – The Perfect Back to School Bag",
+        "description": "Your new go-to school bag. \n\nDesigned with a chic woven shape and roomy compartments, it easily fits your MacBook 13”, notebooks, wallet, and more. \n\nMultiple zip pockets keep your essentials perfectly organized. Spacious, stylish, and practical. \n\nThe perfect bag to start your school year strong 🤍",
+        "duration": 7.93,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/fa/0e/44/fa0e4427c31b05b99d443b5b5857e57a.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/musthave-bag-wine-red?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/fa/0e/44/fa0e4427c31b05b99d443b5b5857e57a_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145310705097.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "eden-bag",
+        "suggestedProductReason": "Bogota -> Eden Bag"
+      },
+      "frames": [
+        "frames/887772145310705097_0s.jpg",
+        "frames/887772145310705097_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Eden Bag",
+        "handle": "eden-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/eden-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": true,
+        "logo_brand": "Apple",
+        "has_text": false,
+        "text_language": "none",
+        "visible_text": null,
+        "best_product_handle": null,
+        "confidence": 0.0,
+        "reason": "The bag in the video frames has a distinct woven/intrecciato pattern and a soft, slouchy crescent/hobo shape. None of the Bynyla products in the catalog feature this specific woven texture or the same soft, unstructured crescent shape. All Bynyla bags shown are more structured."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145309977597",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145309977597/",
+        "title": "Bogota Bag – Your Must-Have Bag",
+        "description": "Your new GO-TO everyday bag. Our Musthave shoulder bag has a round shape and a woven/braided design. \n\nThe bag has a large main compartment with zip closure, and two smaller compartments with zip inside the bag and a small open pocket. \n\nThe must-have bag is very roomy, and can even fit a Macbook 13\" inside.",
+        "duration": 6.7,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/f5/93/3f/f5933fcbae0b62f96c899e334e66387e.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/musthave-bag-wine-red?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/f5/93/3f/f5933fcbae0b62f96c899e334e66387e_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145309977597.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "eden-bag",
+        "suggestedProductReason": "Bogota -> Eden Bag"
+      },
+      "frames": [
+        "frames/887772145309977597_0s.jpg",
+        "frames/887772145309977597_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Eden Bag",
+        "handle": "eden-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/eden-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "never saw a girl that owns this bag that wasn't the hottest person in the room\nHELLO VICHY",
+        "best_product_handle": null,
+        "confidence": 0.9,
+        "reason": "No brand logo is visible on the bag. Overlaid text is clearly English. The bag in the video is a woven, slouchy hobo style in a deep red/burgundy color. None of the Bynyla bags in the provided catalog are woven, making a direct visual match impossible based on material and texture."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145308048732",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145308048732/",
+        "title": "Die eine und einzige Bogota Bag",
+        "description": "Deine neue Go-To-Tasche für jeden Tag.\nUnsere Must-Have-Schultertasche hat eine runde Form und ein geflochtenes Design. Sie verfügt über ein großes Hauptfach mit Reißverschluss, zwei kleinere Innenfächer mit Reißverschluss sowie eine kleine offene Innentasche.\nDiese Tasche ist super geräumig – ein 13-Zoll-Macbook passt problemlos hinein.",
+        "duration": 16.033,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/36/e2/bb/36e2bb4f60183cbe96bdbd068bbbc7cc.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/musthave-bag-wine-red",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/36/e2/bb/36e2bb4f60183cbe96bdbd068bbbc7cc_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145308048732.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "eden-bag",
+        "suggestedProductReason": "Bogota -> Eden Bag"
+      },
+      "frames": [
+        "frames/887772145308048732_0s.jpg",
+        "frames/887772145308048732_1s.jpg"
+      ],
+      "seedProduct": {
+        "title": "Eden Bag",
+        "handle": "eden-bag",
+        "productType": "Shoulder Bag",
+        "onlineStoreUrl": "https://bynyla.com/products/eden-bag",
+        "image": "https://cdn.shopify.com/s/files/1/1029/9215/0868/files/7.png?v=1777649095",
+        "price": "64.95"
+      },
+      "vertex": {
+        "has_logo": true,
+        "logo_brand": "Dior",
+        "has_text": true,
+        "text_language": "not_english",
+        "visible_text": "Meine neue Alltagstasche, HELLO VICHY, Dior",
+        "best_product_handle": null,
+        "confidence": 0.9,
+        "reason": "The bag in the video is a dark green, woven hobo bag. None of the Bynyla products in the catalog feature a woven texture or a similar dark green color. While some Bynyla bags are hobo-shaped (e.g., Sofia, Luna), their material and overall aesthetic do not match the video bag."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145311542484",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145311542484/",
+        "title": "3-in-1 Bag for Work, Lunch & Everyday Life",
+        "description": "Own this fall with the must-have 3-in-1 Quilted Tote. \n\nCrafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.\n\nWith designated compartments for a 15.6″ laptop, meals that stay warm up to 5 hrs or drinks cold up to 10 hrs, plus a handy matching pouch, this bag is perfect for work, school, or travel.\n\nMake it your go-to fall companion — shop now and simplify your everyday.",
+        "duration": 13.73,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/59/ca/db/59cadbb48339597740c8fc96eef6c937.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/3-in-1-quilted-tote-bag?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/59/ca/db/59cadbb48339597740c8fc96eef6c937_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145311542484.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "",
+        "suggestedProductReason": ""
+      },
+      "frames": [
+        "frames/887772145311542484_0s.jpg",
+        "frames/887772145311542484_1s.jpg"
+      ],
+      "seedProduct": null,
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "POV: You finally got the viral H&M tote bag 👜🎀🥺",
+        "best_product_handle": null,
+        "confidence": 1,
+        "reason": "The bag in the video is a black, quilted, structured tote bag with gold hardware and an insulated compartment. None of the Bynyla products in the catalog match these specific visual characteristics, particularly the quilted pattern and the overall structured tote design with top handles."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145311542481",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145311542481/",
+        "title": "3-in-1 Bag for Work, Lunch & Everyday Life",
+        "description": "Own this fall with the must-have 3-in-1 Quilted Tote. \n\nCrafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.\n\nWith designated compartments for a 15.6″ laptop, meals that stay warm up to 5 hrs or drinks cold up to 10 hrs, plus a handy matching pouch, this bag is perfect for work, school, or travel.\n\nMake it your go-to fall companion — shop now and simplify your everyday.",
+        "duration": 6.08,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/fe/9c/4b/fe9c4bb124cc22bf58f5a2e605a372de.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/3-in-1-quilted-tote-bag?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/fe/9c/4b/fe9c4bb124cc22bf58f5a2e605a372de_360w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145311542481.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "",
+        "suggestedProductReason": ""
+      },
+      "frames": [
+        "frames/887772145311542481_0s.jpg",
+        "frames/887772145311542481_1s.jpg"
+      ],
+      "seedProduct": null,
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "The perfect workbag for her doesn't exi....",
+        "best_product_handle": null,
+        "confidence": 0.1,
+        "reason": "The bag in the video is a structured, quilted tote bag with a distinct bottom compartment, which does not have a close visual match in the Bynyla catalog based on shape, material, or specific features. While some Bynyla bags are totes, none share the quilted design or the specific compartment structure."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145311542449",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145311542449/",
+        "title": "3-in-1 Bag for Work, Lunch & Everyday Life",
+        "description": "Own this fall with the must-have 3-in-1 Quilted Tote. \n\nCrafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.\n\nWith designated compartments for a 15.6″ laptop, meals that stay warm up to 5 hrs or drinks cold up to 10 hrs, plus a handy matching pouch, this bag is perfect for work, school, or travel.\n\nMake it your go-to fall companion — shop now and simplify your everyday.",
+        "duration": 10.868,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/75/f6/9c/75f69cb7f05ca9dfe95bc0140a8aec01.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/3-in-1-quilted-tote-bag?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/75/f6/9c/75f69cb7f05ca9dfe95bc0140a8aec01_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145311542449.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "",
+        "suggestedProductReason": ""
+      },
+      "frames": [
+        "frames/887772145311542449_0s.jpg",
+        "frames/887772145311542449_1s.jpg"
+      ],
+      "seedProduct": null,
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "Girls RUN, don't walk to H&M 👀💕",
+        "best_product_handle": null,
+        "confidence": 1,
+        "reason": "The video features a large, structured, quilted black work tote bag with top handles and gold-tone hardware, designed to carry items like lunch. The Bynyla catalog does not contain any bags that visually match this specific style, size, or functionality. Most Bynyla bags are softer, smaller, or have different structural designs. Overlaid English text is clearly visible in both frames, but no brand logo is visible on the bag itself or any other item in the frame (the 'H&M' is part of the overlaid text, not a logo on an object)."
+      }
+    },
+    {
+      "pin": {
+        "id": "887772145311542447",
+        "sourceUrl": "https://www.pinterest.com/pin/887772145311542447/",
+        "title": "3-in-1 Bag for Work, Lunch & Everyday Life",
+        "description": "Own this fall with the must-have 3-in-1 Quilted Tote. \n\nCrafted from high-quality vegan leather with a chic quilted finish and waterproof exterior, it transforms from a tote to an insulated lunch bag and protective laptop carrier—all in one sleek design.\n\nWith designated compartments for a 15.6″ laptop, meals that stay warm up to 5 hrs or drinks cold up to 10 hrs, plus a handy matching pouch, this bag is perfect for work, school, or travel.\n\nMake it your go-to fall companion — shop now and simplify your everyday.",
+        "duration": 9.378,
+        "thumbnail": "https://i.pinimg.com/videos/thumbnails/originals/ea/52/4c/ea524cdea0eb0df8c9bafd80649bdebb.0000000.jpg",
+        "uploader": "Ares Underwear",
+        "trackedLink": "https://hellovichy.com/products/3-in-1-quilted-tote-bag?tw_source=pinterest&tw_adid=%7Badid%7D",
+        "videoUrl": "https://v1.pinimg.com/videos/iht/expMp4/ea/52/4c/ea524cdea0eb0df8c9bafd80649bdebb_720w.mp4",
+        "videoFormat": "V_720P",
+        "localVideo": "/videos/887772145311542447.mp4",
+        "hiddenReason": "",
+        "suggestedProductHandle": "",
+        "suggestedProductReason": ""
+      },
+      "frames": [
+        "frames/887772145311542447_0s.jpg",
+        "frames/887772145311542447_1s.jpg"
+      ],
+      "seedProduct": null,
+      "vertex": {
+        "has_logo": false,
+        "logo_brand": null,
+        "has_text": true,
+        "text_language": "english",
+        "visible_text": "It's not just any bag... It's a 3 in 1 tote bag!💖",
+        "best_product_handle": null,
+        "confidence": 0.9,
+        "reason": "No visible brand logo. English text is present in both frames. The bag in the video is a large, structured, quilted tote bag with multiple external zippered compartments. There is no visually similar bag in the Bynyla catalog, which primarily features softer, hobo-style, or smaller structured bags without quilting or the specific multi-compartment design."
+      }
+    }
+  ]
+}
