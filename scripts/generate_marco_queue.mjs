@@ -120,6 +120,7 @@ async function fileExists(filePath) {
 async function main() {
   const sourceDir = rootPath(argValue("source", "/home/nathan/Apps/mm-video-ads"));
   const outPath = rootPath(argValue("out", "data/marco-publish-queue.json"));
+  const coverBaseUrl = argValue("cover-base-url", "https://pinterest-video-mapper.onrender.com/marco-covers");
   const now = new Date().toISOString();
   const jobs = [];
   let titleIndex = 0;
@@ -130,8 +131,9 @@ async function main() {
     for (const filename of entries) {
       const localVideo = path.join(dir, filename);
       if (!(await fileExists(localVideo))) throw new Error(`Missing video: ${localVideo}`);
+      const id = `${folder}-${filename.replace(/[^a-zA-Z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
       jobs.push({
-        id: `${folder}-${filename.replace(/[^a-zA-Z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+        id,
         status: "queued",
         pinId: `${folder}-${jobs.length + 1}`,
         competitorPinUrl: "",
@@ -141,6 +143,7 @@ async function main() {
         boardName: product.boardName,
         videoUrl: "",
         localVideo,
+        coverUrl: `${coverBaseUrl}/${id}.jpg`,
         thumbnail: "",
         title: titleRotation[titleIndex % titleRotation.length],
         description: product.description,

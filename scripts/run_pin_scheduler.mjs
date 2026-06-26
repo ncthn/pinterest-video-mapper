@@ -275,7 +275,7 @@ async function publishJob(job, context) {
   const board = await resolveBoard(context.pinterestToken, job.boardName, context.createMissingBoards);
   const videoPath = await downloadVideo(job, context.cacheDir);
   const framePath = await extractFirstFrame(videoPath, job, context.cacheDir);
-  const coverUrl = await uploadCoverToShopify(context.config, framePath, job);
+  const coverUrl = job.coverUrl || await uploadCoverToShopify(context.config, framePath, job);
   const mediaId = await uploadPinterestVideo(context.pinterestToken, videoPath);
   const pin = await pinterestRequest(context.pinterestToken, "POST", "/pins", {
     board_id: board.id,
