@@ -169,6 +169,15 @@ async function fetchAdAnalytics(token, advertiserId, ads) {
   return rows;
 }
 
+async function fetchAdDetails(token, advertiserId, adIds) {
+  const details = [];
+  for (const adId of adIds) {
+    const ad = await pinterestRequest(token, "GET", `/ad_accounts/${advertiserId}/ads/${adId}`);
+    details.push(ad);
+  }
+  return details;
+}
+
 function adLookup(ads) {
   const map = new Map();
   for (const ad of ads) {
@@ -299,6 +308,11 @@ async function main() {
   const analytics = await fetchAdAnalytics(token, advertiserId, ads);
   const ranked = rankPinsByAtc(ads, analytics).slice(0, limit);
   if (ranked.length < limit) throw new Error(`Expected ${limit} ranked pins, got ${ranked.length}`);
+  const sourceAdDetails = await fetchAdDetails(
+    token,
+    advertiserId,
+    ranked.map((pin) => pin.adIds[0]).filter(Boolean),
+  );
 
   const sourceCampaign = findSourceCampaign(campaigns);
   const sourceAdGroups = await listAll(token, `/ad_accounts/${advertiserId}/ad_groups`, {
@@ -308,7 +322,7 @@ async function main() {
   const templateAdGroup = sourceAdGroups[0] || {};
   const wwTargetSpec = templateAdGroup.targeting_spec || { LOCATION: [] };
   const frTargetSpec = { ...wwTargetSpec, LOCATION: ["FR"] };
-  const adsByPin = adLookup(ads);
+  const adsByPin = adLookup(sourceAdDetails);
   const selectedPins = ranked.map((pin) => ({
     ...pin,
     destinationUrl: adsByPin.get(pin.pinId)?.destination_url || "",
@@ -316,12 +330,12 @@ async function main() {
 
   const plans = [
     {
-      name: "Bynyla Top ATC Pins - WW P+ - 10 Pins - 5/day",
+      name: `Bynyla Top ATC Pins - WW P+ - ${limit} Pins - 5/day`,
       adGroupName: "Bynyla Top ATC Pins - WW P+ - ad group",
       targetSpec: wwTargetSpec,
     },
     {
-      name: "Bynyla Top ATC Pins - FR P+ - 10 Pins - 5/day",
+      name: `Bynyla Top ATC Pins - FR P+ - ${limit} Pins - 5/day`,
       adGroupName: "Bynyla Top ATC Pins - FR P+ - ad group",
       targetSpec: frTargetSpec,
     },

@@ -10,7 +10,7 @@ export function rankPinsByAtc(ads, analyticsRows) {
   for (const row of analyticsRows) {
     const adId = String(row.AD_ID || row.ad_id || "");
     const ad = adById.get(adId);
-    const pinId = String(row.PIN_ID || ad?.pin_id || ad?.pinId || "");
+    const pinId = String(ad?.pin_id || ad?.pinId || row.PIN_ID || row.pin_id || "");
     if (!pinId) continue;
     const atc = num(row.TOTAL_CLICK_ADD_TO_CART) + num(row.TOTAL_VIEW_ADD_TO_CART);
     const current = byPin.get(pinId) || { pinId, atc: 0, adIds: new Set() };

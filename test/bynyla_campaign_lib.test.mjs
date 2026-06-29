@@ -16,3 +16,10 @@ test("rankPinsByAtc sums click and view add-to-cart by pin", () => {
   const ranked = rankPinsByAtc(ads, analytics);
   assert.deepEqual(ranked.map((row) => [row.pinId, row.atc]), [["p2", 10], ["p1", 6]]);
 });
+
+test("rankPinsByAtc keeps exact ad pin id over rounded analytics pin id", () => {
+  const ads = [{ id: "a1", pin_id: "1152710467152616975" }];
+  const analytics = [{ AD_ID: "a1", PIN_ID: 1152710467152617000, TOTAL_CLICK_ADD_TO_CART: 1 }];
+
+  assert.equal(rankPinsByAtc(ads, analytics)[0].pinId, "1152710467152616975");
+});
