@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "NODE_ENV=development node server.js",
-    "check": "node --check server.js && node --check scripts/seed-data.mjs && node --check scripts/pinterest_scheduler_lib.mjs && node --check scripts/generate_pin_queue.mjs && node --check scripts/generate_marco_queue.mjs && node --check scripts/run_pin_scheduler.mjs && node --check public/app.js",
+    "check": "node --check server.js && node --check scripts/seed-data.mjs && node --check scripts/pinterest_scheduler_lib.mjs && node --check scripts/bynyla_campaign_lib.mjs && node --check scripts/generate_pin_queue.mjs && node --check scripts/generate_marco_queue.mjs && node --check scripts/run_pin_scheduler.mjs && node --check scripts/create_bynyla_top_atc_campaigns.mjs && node --check public/app.js",
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
