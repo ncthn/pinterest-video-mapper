@@ -6,6 +6,7 @@ data/vertex-errors.json
 data/publish-queue.json
 data/publish-manifest.jsonl
 data/bynyla-top-atc-campaigns.json
+data/bynyla-margot-beauty-organic-tests.json
 .cache/
 public/videos/*.mp4
 public/videos/*.part
